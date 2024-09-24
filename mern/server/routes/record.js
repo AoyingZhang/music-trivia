@@ -1,5 +1,6 @@
 import express from "express";
 
+//API ENDPOINTS
 // This will help us connect to the database
 import db from "../db/connection.js";
 
