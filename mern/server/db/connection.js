@@ -1,5 +1,8 @@
 import { MongoClient, ServerApiVersion } from "mongodb";
-
+import dotenv from "dotenv";
+dotenv.config({ path: './config.env' });
+//DEBUG mongodb connected
+//console.log("MongoDB URI:", process.env.ATLAS_URI);
 const uri = process.env.ATLAS_URI || "";
 const client = new MongoClient(uri, {
   serverApi: {
